@@ -1,7 +1,8 @@
 $(document).ready(function() {
-
+	alert('dd')
 	//E-mail Ajax Send
-	$("form").submit(function() { //Change
+	$("form").submit(function() { 
+		alert('dddga')//Change
 		var th = $(this);
 		$.ajax({
 			type: "POST",
