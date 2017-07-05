@@ -229,6 +229,36 @@
     $("html, body").animate({ scrollTop: 0 }, 600);
     return false;
 });
+		
+   
+    $(window).on("scroll load resize", function(){
+ 
+                          // Отменяем показ анимации, если она уже была выполнена
+ 
+        var w_top = $(window).scrollTop();        // Количество пикселей на которое была прокручена страница
+        var e_top = $('.city-local').offset().top;     // Расстояние от блока со счетчиками до верха всего документа
+        console.log(self.pageYOffset)
+ 
+        var w_height = $(window).height();        // Высота окна браузера
+        var d_height = $(document).height();      // Высота всего документа
+ 
+        var e_height = $('.city-local').outerHeight(); // Полная высота блока со счетчиками
+ 
+        
+        if (w_top > 1600) {
+        	$('.btn-go-top').show();
+        }
+        else {
+        	$('.btn-go-top').hide();
+        }
+        if (w_top <1600) {
+        	$('.btn-go-top').hide();
+        }
+    });
+    firstBlock.offsetHeight
+    $('.down-arrow').click(function(){
+    	window.scrollTo(00,firstBlock.offsetHeight+5);
+    })
 	})
 	</script>
 </body>
