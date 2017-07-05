@@ -1,0 +1,610 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 7, ../sass/screen.scss */
+body, html {
+  height: 100%;
+}
+
+@font-face {
+  font-family: DINOT;
+  src: url(../img/dinot.otf);
+}
+/* line 14, ../sass/screen.scss */
+.main-container {
+  width: 100%;
+  height: 100%;
+}
+/* line 17, ../sass/screen.scss */
+.main-container .first-block {
+  position: relative;
+  height: 100%;
+  background-image: url(../img/image.png);
+  background-size: 100%;
+  width: 100%;
+}
+/* line 23, ../sass/screen.scss */
+.main-container .first-block header {
+  width: 100%;
+  height: 65px;
+  background-color: #fff;
+  z-index: 8;
+  position: absolute;
+}
+/* line 29, ../sass/screen.scss */
+.main-container .first-block header ul {
+  float: right;
+  margin-right: 4vw;
+}
+/* line 32, ../sass/screen.scss */
+.main-container .first-block header ul li {
+  display: inline-block;
+}
+/* line 34, ../sass/screen.scss */
+.main-container .first-block header ul li a {
+  color: #231f20;
+  font-family: DINOT;
+  font-size: 1.5vw;
+  font-weight: 400;
+  line-height: 60px;
+  text-decoration: none;
+}
+/* line 41, ../sass/screen.scss */
+.main-container .first-block header ul li a span {
+  margin-left: 1.5vw;
+  margin-right: 1.5vw;
+  text-decoration: none;
+  cursor: default;
+}
+/* line 46, ../sass/screen.scss */
+.main-container .first-block header ul li a span:hover {
+  text-decoration: none;
+}
+/* line 54, ../sass/screen.scss */
+.main-container .first-block header .change-lang {
+  float: right;
+  padding-top: 64px;
+  margin-right: 2vw;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  background-image: url(../img/lang-btn.png);
+  background-size: 100%;
+  margin-top: 12px;
+  background-repeat: no-repeat;
+}
+/* line 68, ../sass/screen.scss */
+.main-container .first-block header .change-lang-blocks {
+  position: absolute;
+  display: none;
+  right: 2vw;
+  top: 63px;
+}
+/* line 73, ../sass/screen.scss */
+.main-container .first-block header .change-lang-blocks .change-lang-block {
+  width: 42px;
+  height: 25px;
+  background-color: #231f20;
+  margin-top: 3px;
+  color: white;
+  font-family: DINOT;
+  font-size: 13pt;
+  font-weight: 500;
+  text-align: center;
+  line-height: 25px;
+}
+/* line 85, ../sass/screen.scss */
+.main-container .first-block header .change-lang-blocks a {
+  text-decoration: none;
+}
+/* line 90, ../sass/screen.scss */
+.main-container .first-block .left-block {
+  height: 100%;
+  width: 32%;
+  opacity: 0.9;
+  background-color: black;
+  z-index: 9;
+  position: absolute;
+  text-align: center;
+}
+/* line 98, ../sass/screen.scss */
+.main-container .first-block .left-block .logo {
+  width: 43%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 65px;
+}
+/* line 103, ../sass/screen.scss */
+.main-container .first-block .left-block .logo img {
+  width: 130px;
+}
+/* line 107, ../sass/screen.scss */
+.main-container .first-block .left-block .tours {
+  cursor: pointer;
+  width: 380px;
+  height: 100px;
+  margin: 0 auto;
+  margin-top: 2.5vw;
+}
+/* line 113, ../sass/screen.scss */
+.main-container .first-block .left-block .tours img.dat {
+  width: 10%;
+  float: left;
+  width: 30px;
+}
+/* line 118, ../sass/screen.scss */
+.main-container .first-block .left-block .tours img.dashed {
+  height: 100px;
+  float: left;
+  margin-left: 4%;
+}
+/* line 123, ../sass/screen.scss */
+.main-container .first-block .left-block .tours h3 {
+  font-size: 28px;
+  float: left;
+  margin: 0;
+  margin-left: 3%;
+  font-family: DINOT;
+  font-weight: 700;
+  margin-bottom: 0.4vw;
+  margin-right: 50px;
+}
+/* line 133, ../sass/screen.scss */
+.main-container .first-block .left-block .tours p {
+  font-size: 18px;
+  float: left;
+  font-family: DINOT;
+  margin-bottom: 0.4vw;
+  margin-left: 3%;
+  margin-right: 30px;
+}
+/* line 144, ../sass/screen.scss */
+.main-container .block-with-thing {
+  margin-top: 20vw;
+  float: left;
+}
+/* line 145, ../sass/screen.scss */
+.main-container .block-with-thing .wrapper {
+  width: 1170px;
+  margin: 0 auto;
+}
+/* line 151, ../sass/screen.scss */
+.main-container .block-with-thing .thing-block {
+  text-align: center;
+}
+/* line 153, ../sass/screen.scss */
+.main-container .block-with-thing .thing-block p {
+  font-size: 2vw;
+  color: #000;
+  font-family: DINOT;
+  font-weight: 700;
+  margin-top: 4vw;
+}
+/* line 161, ../sass/screen.scss */
+.main-container .block-with-thing #first-image {
+  margin-top: 75px;
+  width: 324px;
+}
+/* line 165, ../sass/screen.scss */
+.main-container .block-with-thing #third-image {
+  margin-top: 98px;
+  width: 270px;
+}
+/* line 170, ../sass/screen.scss */
+.main-container .block-with-thing #second-image {
+  width: 186px;
+}
+/* line 174, ../sass/screen.scss */
+.main-container .line {
+  margin-top: 15vw;
+  float: left;
+  text-align: center;
+}
+/* line 177, ../sass/screen.scss */
+.main-container .line img {
+  width: 1170px;
+}
+/* line 181, ../sass/screen.scss */
+.main-container .city-local {
+  float: left;
+  margin-top: 10vw;
+  width: 100%;
+  height: 18vw;
+  background-image: url(../img/footer-bg.jpg);
+  background-size: 100%;
+}
+/* line 187, ../sass/screen.scss */
+.main-container .city-local .wrapper {
+  width: 1170px;
+  margin: 0 auto;
+}
+/* line 191, ../sass/screen.scss */
+.main-container .city-local h1 {
+  color: #221f1f;
+  font-family: DINOT;
+  font-weight: 700;
+  font-size: 42px;
+  margin-top: 2.5vw;
+}
+/* line 198, ../sass/screen.scss */
+.main-container footer {
+  float: left;
+  width: 100%;
+  background-color: #000;
+  height: 500px;
+}
+/* line 203, ../sass/screen.scss */
+.main-container footer .wrapper {
+  width: 1170px;
+  margin: 0 auto;
+  /* Firefox 19+ */
+  /* Firefox 18- */
+}
+/* line 206, ../sass/screen.scss */
+.main-container footer .wrapper h1 {
+  color: white;
+  font-family: DINOT;
+  font-size: 42px;
+  font-weight: 700;
+  margin-top: 5.5%;
+}
+/* line 213, ../sass/screen.scss */
+.main-container footer .wrapper input {
+  width: 85%;
+  height: 40px;
+  margin-top: 1vw;
+  text-indent: 3%;
+  color: #000;
+  font-family: DINOT;
+  font-size: 18pt;
+  background-color: #fff;
+}
+/* line 223, ../sass/screen.scss */
+.main-container footer .wrapper ::-webkit-input-placeholder {
+  color: #000;
+  font-family: DINOT;
+  font-size: 18pt;
+}
+/* line 226, ../sass/screen.scss */
+.main-container footer .wrapper ::-moz-placeholder {
+  color: #000;
+  font-family: DINOT;
+  font-size: 18pt;
+}
+/* line 229, ../sass/screen.scss */
+.main-container footer .wrapper :-moz-placeholder {
+  color: #000;
+  font-family: DINOT;
+  font-size: 18pt;
+}
+/* line 232, ../sass/screen.scss */
+.main-container footer .wrapper :-ms-input-placeholder {
+  color: #000;
+  font-family: DINOT;
+  font-size: 18pt;
+}
+/* line 236, ../sass/screen.scss */
+.main-container footer p {
+  color: white;
+  font-family: DINOT;
+  font-size: 18pt;
+  font-weight: 500;
+  float: right;
+  margin-right: 8%;
+  margin-top: calc(160px + 5vh);
+}
+/* line 245, ../sass/screen.scss */
+.main-container footer a div {
+  height: 40px;
+  width: 40px;
+  background-image: url(../img/facebook.png);
+  float: right;
+  margin-top: calc(160px + 5vh);
+}
+
+/* line 254, ../sass/screen.scss */
+.select-menu-look {
+  display: none;
+  width: 85%;
+  height: calc(3vw + 175px);
+  position: absolute;
+  top: calc(40px + 2vw);
+  background-color: #0db04b;
+}
+/* line 261, ../sass/screen.scss */
+.select-menu-look li {
+  height: 15%;
+  width: 97%;
+  cursor: pointer;
+  font-size: 12pt;
+  margin-top: 0.6%;
+  margin-left: 3%;
+  font-family: DINOT;
+  color: #fff;
+}
+/* line 270, ../sass/screen.scss */
+.select-menu-look li:hover {
+  font-weight: 700;
+}
+/* line 274, ../sass/screen.scss */
+.select-menu-look ul {
+  height: 100%;
+}
+
+/* line 278, ../sass/screen.scss */
+.main-container .first-block .left-block .tours:nth-child(2) {
+  color: #0daf4a;
+}
+
+/* line 281, ../sass/screen.scss */
+.main-container .first-block .left-block .tours:nth-child(3) {
+  color: #f16b20;
+}
+
+/* line 284, ../sass/screen.scss */
+.main-container .first-block .left-block .tours:nth-child(4) {
+  color: #fff;
+}
+
+/* line 287, ../sass/screen.scss */
+.main-container .first-block .left-block .tours:nth-child(5) {
+  color: #6c818b;
+}
+
+/* line 290, ../sass/screen.scss */
+.main-container .first-block .left-block .tours:nth-child(6) {
+  color: #962cb1;
+}
+
+/* line 293, ../sass/screen.scss */
+.menu-change-lang {
+  position: relative;
+}
+
+/* line 296, ../sass/screen.scss */
+.down-arrow {
+  width: 50px;
+  height: 50px;
+  background-color: #232020;
+  position: absolute;
+  border-radius: 50%;
+  background-image: url(../img/down-arrow.png);
+  z-index: 100;
+  background-size: 60%;
+  background-position: 50% 55%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  position: absolute;
+  bottom: -2.5%;
+  left: 50%;
+  margin-left: -25px;
+}
+
+/* line 313, ../sass/screen.scss */
+.about-be-toures {
+  width: 100%;
+  margin-top: 12vw;
+  float: left;
+}
+/* line 314, ../sass/screen.scss */
+.about-be-toures .wrapper {
+  width: 1170px;
+  margin: 0 auto;
+}
+/* line 321, ../sass/screen.scss */
+.about-be-toures img {
+  float: right;
+  height: 350px;
+}
+/* line 324, ../sass/screen.scss */
+.about-be-toures h2 {
+  color: #221f1f;
+  font-family: DINOT;
+  font-weight: 700;
+  font-size: 42px;
+  margin-top: 0;
+  float: left;
+  margin-bottom: 50px;
+  width: 90%;
+}
+/* line 334, ../sass/screen.scss */
+.about-be-toures p {
+  float: left;
+  font-size: 21px;
+  width: 60%;
+  font-family: DINOT;
+  margin-bottom: 25px;
+}
+/* line 342, ../sass/screen.scss */
+.about-be-toures p.inner-text {
+  width: 90%;
+  margin-left: 5%;
+}
+
+@media screen and (min-width: 1600px) and (max-width: 2560px) {
+  /* line 348, ../sass/screen.scss */
+  .main-container footer p {
+    margin-top: calc(160px + 6.5vh);
+  }
+
+  /* line 351, ../sass/screen.scss */
+  .main-container footer a div {
+    margin-top: calc(160px + 7vh);
+  }
+}
+/* line 355, ../sass/screen.scss */
+.graffiti-block__art-in-open-space {
+  height: 500px;
+  position: absolute;
+  width: 370px;
+  background-color: #fff;
+  border: 9px solid #6c818c;
+  border-radius: 5px;
+  top: calc(155px + 7.5vw);
+  left: 250px;
+}
+/* line 364, ../sass/screen.scss */
+.graffiti-block__art-in-open-space .graffiti-block__image {
+  width: 100%;
+}
+/* line 366, ../sass/screen.scss */
+.graffiti-block__art-in-open-space .graffiti-block__image img {
+  width: 100%;
+}
+
+/* line 371, ../sass/screen.scss */
+.blocks-grafs {
+  position: relative;
+  float: left;
+  width: 68%;
+  height: 100%;
+  left: 32%;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1024px) {
+  /* line 379, ../sass/screen.scss */
+  .main-container .first-block .left-block {
+    height: auto;
+  }
+}
+/* line 383, ../sass/screen.scss */
+.art-in-open-space {
+  width: 300px;
+  top: calc(465px + 10vw);
+  width: 300px;
+  top: calc(495px + 7.5vw);
+  position: absolute;
+  left: -50px;
+  z-index: 200;
+}
+
+/* line 394, ../sass/screen.scss */
+.graffiti-block__inner-text p {
+  color: #231f20;
+  font-family: DINOT;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 26px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+/* line 404, ../sass/screen.scss */
+.rts {
+  width: 100px;
+  height: 35px;
+  background-color: #6c818c;
+  float: right;
+  text-align: center;
+  line-height: 35px;
+  border-top-left-radius: 5px;
+}
+/* line 412, ../sass/screen.scss */
+.rts a {
+  color: white;
+  font-family: DINOT;
+  font-size: 16px;
+  font-weight: 500;
+}
+/* line 417, ../sass/screen.scss */
+.rts a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* line 423, ../sass/screen.scss */
+.gps {
+  position: absolute;
+  width: 60px;
+  margin-top: -485px;
+  margin-left: -30px;
+}
+
+/* line 429, ../sass/screen.scss */
+.art-in-open-space-wrap {
+  display: none;
+}
+
+/* line 432, ../sass/screen.scss */
+.btn-go-top {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 10%;
+  right: 2%;
+  background-size: 50%;
+  background-image: url(../img/up-arrow.png);
+  background-repeat: no-repeat;
+  background-color: #000;
+  background-position: 50% 50%;
+  border-radius: 4px;
+  display: none;
+}
